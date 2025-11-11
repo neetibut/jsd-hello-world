@@ -620,6 +620,7 @@ body {
 
 /* Next participant */
 #participant-38 {
+  border: solid rgb(160, 0, 0) 3px;
   background-color: rgb(32, 32, 134);
   background-image: url(https://www.animationsoftware7.com/img/agifs/snow02.gif);
 }
@@ -632,7 +633,7 @@ body {
 }
 #participant-38 .participant-quote::before {
   color: #e9e9e9;
-  content: "ท้อแท้แต่อย่าท้อถ่อย ให้พี่ Aniki เป็นกำลังใจ"
+  content: "ท้อแท้แต่อย่าท้อถอย ให้รูปพี่ Aniki เป็นกำลังใจ"
 }
 
 /* Next participant */

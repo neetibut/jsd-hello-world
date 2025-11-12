@@ -410,16 +410,25 @@ body {
 
 /* Next participant */
 #participant-15 {
-	background-color: white;
+  background: linear-gradient(45deg,#0B0C1A,#1A1B3A,#262A56,#3E1F47,#5A189A,
+  #7B2CBF,#9D4EDD
+  );
+  box-shadow: 0 0 10px rgb(1, 44, 235);
 }
 #participant-15 .profile-photo {
-	background-image: url("../images/participant-photo.png");
+  background-image: url("../images/15_profile.png");
 }
 #participant-15 .participant-name::before {
   content: "15_Kamolthep(Mik)";
+  color: rgb(3, 80, 94);
 }
 #participant-15 .participant-quote::before {
-	/* content: "Your inspirational quote here." */
+  content: "Live your life, love your moments.";
+  color: rgb(64, 102, 14);
+}
+#participant-15:hover{
+  background: linear-gradient(135deg,#FFB3BA,#FFDFBA,#FFFFBA,#BAFFC9,#BAE1FF,#D4BAFF,
+  #FFBAED);
 }
 
 /* Next participant */

@@ -186,9 +186,11 @@ body {
 }
 #participant-6 .participant-name::before {
   content: "06_Chanapoom(Poom/ภูมิ)";
+  color: white;
 }
 #participant-6 .participant-quote::before {
   content: "The Power Of The Darkside~";
+  color: white;
 }
 
 /* Next participant */

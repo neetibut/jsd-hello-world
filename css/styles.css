@@ -877,21 +877,14 @@ body {
 
 /* Next participant */
 #participant-45 {
-<<<<<<< HEAD
-  background-color: rgb(249, 57, 153);
-=======
 	background-color: rgb(249, 57, 153);
->>>>>>> main
 	border-top-left-radius: 24px;
 	border:3px solid orange;
 	box-shadow: 3px 3px #333;
 }
 #participant-45 .profile-photo {
-<<<<<<< HEAD
-  background-image:
-=======
+
 	background-image:
->>>>>>> main
 	url("https://cdn.dribbble.com/userupload/25258373/file/original-c1fa8be007b47ba90d905d6b13672c83.gif");
 	border-color: orange;
 }
@@ -902,11 +895,7 @@ body {
   text-shadow: 0 -2px orange;
 }
 #participant-45 .participant-quote::before {
-<<<<<<< HEAD
   content: "Make Noise";
-=======
-	content: "Make Noise";
->>>>>>> main
 	color: #333;
 	text-shadow: 0 -2px orange;
 }

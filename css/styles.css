@@ -241,31 +241,86 @@ body {
 
 /* Next participant */
 #participant-10 {
-  background-color: rgb(255, 185, 171);
+  position: relative;
+  border-radius: 15px;
+  overflow: hidden;
+ background: linear-gradient(
+    135deg,
+    #e9593c,
+    #f8b4ff,
+    #4a67fa,
+    #ffb9ab
+  );
+  background-size: 300% 300%;
+  animation: cardBgFlow 8s ease-in-out infinite;
   border: 3px solid rgb(240, 157, 240);
   box-shadow: 0 4px 10px goldenrod;
-  border-radius: 15px;
-  animation: glow 2s ease-in-out infinite alternate;
 }
+
+#participant-10::before {
+  content: "";
+  position: absolute;
+  inset: 0;
+  padding: 3px;
+  border-radius: 15px;
+  background: linear-gradient(120deg, gold, violet, pink, gold);
+  background-size: 300% 300%;
+  animation: glowBorder 5s linear infinite;
+  z-index: 0;
+
+  -webkit-mask:
+    linear-gradient(#fff 0 0) content-box,
+    linear-gradient(#fff 0 0);
+  -webkit-mask-composite: xor;
+          mask-composite: exclude;
+}
+
 #participant-10 .profile-photo {
   background-image: url("../images/jack-profile.jpg");
   background-size: cover;
   background-position: center;
-  margin: 10px auto;
-  box-shadow: 0 0 15px gold;
-  animation: glow 2s ease-in-out infinite alternate;
+  width: 100px;
+  height: 100px;
+  border-radius: 50%;
+  margin: 12px auto 8px;
+  box-shadow: 0 0 20px gold;
+  animation: glowPulse 2s ease-in-out infinite alternate;
+  position: relative;
+  z-index: 1;
 }
-@keyframes glow {
-  from { box-shadow: 0 0 25px gold; }
-  to { box-shadow: 0 0 25px violet; }
-}
+
 #participant-10 .participant-name::before {
   content: "Chutikarn Kintorn";
+  display: block;
+  font-weight: 700;
+  text-align: center;
+  margin-top: 2px;
 }
-#participant-10 .participant-quote::before {
-  content: "อยู่เฉยๆ ก็สบายล่ะ"
 
+#participant-10 .participant-quote::before {
+  content: "อยู่เฉยๆ ก็สบายดีอยู่ละ";
+  display: block;
+  text-align: center;
+  font-style: italic;
+  color: #444;
+  margin-bottom: 10px;
 }
+@keyframes cardBgFlow {
+  0%   { background-position: 0% 50%; }
+  50%  { background-position: 100% 50%; }
+  100% { background-position: 0% 50%; }
+}
+@keyframes glowBorder {
+  0% { background-position: 0% 50%; }
+  50% { background-position: 100% 50%; }
+  100% { background-position: 0% 50%; }
+}
+
+@keyframes glowPulse {
+  from { box-shadow: 0 0 20px gold; }
+  to { box-shadow: 0 0 35px rgb(216, 21, 216); }
+}
+
 
 /* Next participant */
 #participant-11 {

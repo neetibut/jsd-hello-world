@@ -836,23 +836,58 @@ content: "17_KROEKPOL";
 }
 
 /* Next participant */
-#participant-36 {
-  background-color: white;
+
+@keyframes milkglow-normal {
+  0% {box-shadow: 0 0 5px #ffa72d, 0 0 10px #ffa72d, 0 0 15px #ffa72d;}
+  50% {box-shadow: 0 0 15px #ffa72d, 0 0 25px #ffa72d, 0 0 35px #ffa72d;}
+  100% {box-shadow: 0 0 5px #ffa72d, 0 0 10px #ffa72d, 0 0 15px #ffa72d;}
 }
+
+#participant-36 {
+	/* background-color: #fff; */
+  background-image: url("../images/36test3.jpg"); 
+  background-position-x: -49px ;
+  background-position-y: -21px;
+  background-size: cover;
+  border: #c9c9c9 solid 2px;
+}
+
 #participant-36 .profile-photo {
-  background-image: url("../images/participant-photo.png");
+	background-image: url("../images/36_Sirada.gif");
+  border: #E08300 solid 3px;
+}
+
+#participant-36:hover {
+  background-image: url("../images/36test4.webp");
+  background-position-x: -4px ;
+  background-position-y: -22px;
+  background-size: cover;
+  animation: milkglow-normal 4s linear infinite;
+
 }
 #participant-36 .participant-name::before {
   content: "36_Sirada(Milk)";
+  color: #E08300;
+  background-color: #000;
+  padding: 1px 1px;
+  display: inline-block;
+  transform: skewX(-20deg);
 }
+
 #participant-36 .participant-quote::before {
   content: "Code first, panic later.";
+  color: #E08300;
+  background-color: #000;
+  padding: 1px 10px;
+  display: inline-block;
+  transform: skewX(-20deg);
 }
 
 /* Next participant */
 #participant-37 {
   background-color: white;
 }
+
 #participant-37 .profile-photo {
   background-image: url("../images/participant-photo.png");
 }
